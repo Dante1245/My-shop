@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DANTES STREET CO. | Modern Clothing Brand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-wrap">
+        <a href="#" class="brand">DANTES STREET CO.</a>
+        <nav class="nav" id="main-nav">
+          <a href="#shop">Shop</a>
+          <a href="#collections">Collections</a>
+          <a href="#dna">Style DNA</a>
+          <a href="#community">Community</a>
+        </nav>
+        <div class="actions">
+          <button class="icon-btn" id="theme-toggle" aria-label="Toggle color mode">☀️</button>
+          <button class="icon-btn" id="open-search" aria-label="Open search">🔍</button>
+          <button class="icon-btn cart-btn" id="open-cart" aria-label="Open cart">
+            🛒 <span id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+      <div class="live-banner" id="live-banner">🔥 12 people are viewing the SS26 drop right now.</div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="label">NEW DROP / SS26</p>
+          <h1>Streetwear crafted for movement, confidence, and culture.</h1>
+          <p>
+            Welcome to DANTES STREET CO. — premium essentials with bold cuts, signature fabrics,
+            and limited weekly releases.
+          </p>
+          <div class="hero-cta">
+            <a href="#shop" class="btn primary">Shop the Drop</a>
+            <button class="btn ghost" id="size-guide-btn">Size Guide</button>
+          </div>
+          <ul class="stats">
+            <li><strong>20k+</strong><span>Happy Customers</span></li>
+            <li><strong>4.9/5</strong><span>Average Rating</span></li>
+            <li><strong>48h</strong><span>Fast Dispatch</span></li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <h3>Drop Countdown</h3>
+          <p>Next release in:</p>
+          <div id="countdown" class="countdown">00d : 00h : 00m : 00s</div>
+          <p class="subtle">Limited capsules. No restocks.</p>
+          <button class="btn primary full" id="spin-btn">🎁 Spin Daily Reward</button>
+          <p class="tiny" id="spin-status">Get your discount for today.</p>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="shop" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Featured Products</h2>
+            <p>Filter by category, search instantly, and quick-view every piece.</p>
+          </div>
+
+          <div class="toolbar">
+            <div class="filters" id="filters"></div>
+            <input id="search-input" type="search" placeholder="Search by name or tag..." />
+            <select id="sort-select" aria-label="Sort products">
+              <option value="featured">Sort: Featured</option>
+              <option value="low">Price: Low to High</option>
+              <option value="high">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+            </select>
+          </div>
+
+          <div id="product-grid" class="product-grid"></div>
+        </div>
+      </section>
+
+
+
+      <section id="wishlist" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Your Wishlist</h2>
+            <p>Save favorite pieces and come back anytime.</p>
+          </div>
+          <div id="wishlist-grid" class="product-grid"></div>
+        </div>
+      </section>
+
+      <section id="recently-viewed" class="section dark">
+        <div class="container">
+          <div class="section-head">
+            <h2>Recently Viewed</h2>
+            <p>Jump back into pieces you explored.</p>
+          </div>
+          <div id="recent-grid" class="product-grid"></div>
+        </div>
+      </section>
+
+      <section id="collections" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Curated Collections</h2>
+          </div>
+          <div class="collections-grid">
+            <article>
+              <h3>Urban Utility</h3>
+              <p>Functional fits with weatherproof detail.</p>
+            </article>
+            <article>
+              <h3>Minimal Core</h3>
+              <p>Neutral tones built for everyday rotation.</p>
+            </article>
+            <article>
+              <h3>Night Motion</h3>
+              <p>Reflective elements and oversized silhouettes.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="dna" class="section dark">
+        <div class="container">
+          <div class="section-head">
+            <h2>Style DNA Match</h2>
+            <p>Take a 20-second quiz and get a personalized product suggestion.</p>
+          </div>
+          <form id="dna-form" class="dna-form">
+            <label>
+              Your vibe
+              <select id="vibe" required>
+                <option value="">Choose one</option>
+                <option value="minimal">Minimal</option>
+                <option value="bold">Bold</option>
+                <option value="sport">Sport</option>
+              </select>
+            </label>
+            <label>
+              Preferred fit
+              <select id="fit" required>
+                <option value="">Choose one</option>
+                <option value="oversized">Oversized</option>
+                <option value="relaxed">Relaxed</option>
+                <option value="fitted">Fitted</option>
+              </select>
+            </label>
+            <label>
+              Everyday focus
+              <select id="focus" required>
+                <option value="">Choose one</option>
+                <option value="comfort">Comfort</option>
+                <option value="statement">Statement</option>
+                <option value="utility">Utility</option>
+              </select>
+            </label>
+            <button class="btn primary" type="submit">Find My Match</button>
+          </form>
+          <div id="dna-result" class="dna-result subtle">No match yet — start your quiz.</div>
+        </div>
+      </section>
+
+
+
+      <section id="lookbook" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Street Browser Container</h2>
+            <p>Explore style stories in an interactive browser-style experience.</p>
+          </div>
+          <div class="browser-container">
+            <div class="browser-top">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <p id="browser-url">https://dantesstreet.co/lookbook/night-motion</p>
+            </div>
+            <div class="browser-tabs" id="browser-tabs">
+              <button class="tab-btn active" data-story="night">Night Motion</button>
+              <button class="tab-btn" data-story="utility">Urban Utility</button>
+              <button class="tab-btn" data-story="minimal">Minimal Core</button>
+            </div>
+            <article class="browser-content" id="browser-content"></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Customer Stories</h2>
+          </div>
+          <div class="testimonials" id="testimonial-slider"></div>
+        </div>
+      </section>
+
+
+
+      <section id="outfit-lab" class="section dark">
+        <div class="container">
+          <div class="section-head">
+            <h2>Outfit Builder Lab</h2>
+            <p>Mix tops, bottoms, and outerwear to build a full look instantly.</p>
+          </div>
+          <form id="outfit-form" class="dna-form">
+            <label>Top
+              <select id="outfit-top" required></select>
+            </label>
+            <label>Bottom
+              <select id="outfit-bottom" required></select>
+            </label>
+            <label>Outerwear
+              <select id="outfit-outer" required></select>
+            </label>
+            <button class="btn primary" type="submit">Build Outfit</button>
+          </form>
+          <div id="outfit-result" class="dna-result subtle">No outfit built yet.</div>
+        </div>
+      </section>
+
+      <section id="community" class="section">
+        <div class="container newsletter">
+          <div>
+            <h2>Join the DANTES community</h2>
+            <p>Get early access, private drops, and style inspiration.</p>
+          </div>
+          <form id="newsletter-form">
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <button class="btn primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside id="cart-drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <h3>Your Cart</h3>
+        <button class="icon-btn" id="close-cart" aria-label="Close cart">✕</button>
+      </div>
+      <div id="cart-items" class="drawer-body"></div>
+      <div class="drawer-foot">
+        <p>Total: <strong id="cart-total">$0</strong></p>
+        <button class="btn primary" id="checkout-btn">Checkout</button>
+      </div>
+    </aside>
+
+    <dialog id="quick-view">
+      <button class="icon-btn close-dialog" id="close-quick-view">✕</button>
+      <div id="quick-view-content"></div>
+    </dialog>
+
+    <dialog id="size-guide">
+      <button class="icon-btn close-dialog" id="close-size-guide">✕</button>
+      <h3>DANTES STREET CO. Size Guide</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Chest (in)</th>
+            <th>Waist (in)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>S</td><td>36-38</td><td>30-32</td></tr>
+          <tr><td>M</td><td>39-41</td><td>33-35</td></tr>
+          <tr><td>L</td><td>42-44</td><td>36-38</td></tr>
+          <tr><td>XL</td><td>45-47</td><td>39-42</td></tr>
+        </tbody>
+      </table>
+    </dialog>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
