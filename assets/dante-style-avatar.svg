@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 760" role="img" aria-labelledby="title desc">
+  <title id="title">DANTES STREET CO. virtual stylist avatar</title>
+  <desc id="desc">A smiling illustrated streetwear stylist wearing a black hoodie, brown pants, and white sneakers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f7f8"/>
+      <stop offset="1" stop-color="#d9dce2"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffca9e"/>
+      <stop offset="1" stop-color="#d98b5f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="520" height="760" rx="34" fill="url(#bg)"/>
+  <ellipse cx="270" cy="712" rx="165" ry="28" fill="#1b1b1b" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <path d="M195 308c-18 28-24 72-20 134l16 184h48l5-154h43l10 154h49l9-187c4-68-11-114-35-137z" fill="#8a6848"/>
+    <path d="M190 316c12-44 44-72 84-72 43 0 76 29 89 73l13 118c-64 28-137 28-200 0z" fill="#111217"/>
+    <path d="M202 320c18 24 45 36 74 36 31 0 58-13 76-37l6 82H196z" fill="#191a20"/>
+    <path d="M216 250c6 28 24 45 55 45s51-17 58-45l-14-20h-85z" fill="url(#skin)"/>
+    <path d="M188 140c0-67 41-110 92-110s92 43 92 110c0 72-41 122-92 122s-92-50-92-122z" fill="url(#skin)"/>
+    <path d="M180 148c-24-70 21-126 91-132 69-6 118 41 114 111-18-30-47-45-87-45-57 0-90 21-118 66z" fill="#20130f"/>
+    <path d="M194 112c28-49 87-74 149-42 14 8 25 18 34 30-21-12-52-17-85-10-40 8-73 13-98 22z" fill="#311d16" opacity=".9"/>
+    <circle cx="239" cy="148" r="16" fill="#fff"/>
+    <circle cx="322" cy="148" r="16" fill="#fff"/>
+    <circle cx="242" cy="151" r="8" fill="#3b2116"/>
+    <circle cx="319" cy="151" r="8" fill="#3b2116"/>
+    <path d="M223 121c19-11 34-10 47 2" stroke="#21130f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M300 123c17-12 33-12 48-1" stroke="#21130f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M252 202c19 14 39 14 58 0" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M230 188c31 36 69 35 99 0" stroke="#46271e" stroke-width="15" stroke-linecap="round" fill="none"/>
+    <path d="M214 176c12 51 43 74 66 74 27 0 57-26 68-74" stroke="#2c1a14" stroke-width="24" stroke-linecap="round" fill="none" opacity=".9"/>
+    <path d="M178 372c-30 58-34 112-11 162" stroke="url(#skin)" stroke-width="33" stroke-linecap="round"/>
+    <path d="M376 372c26 65 26 112 2 156" stroke="url(#skin)" stroke-width="33" stroke-linecap="round"/>
+    <path d="M214 627h55v43c-34 9-65 9-92 1 4-27 17-41 37-44z" fill="#fff"/>
+    <path d="M300 627h55c22 4 36 18 40 44-28 8-59 8-94-1z" fill="#fff"/>
+    <circle cx="373" cy="510" r="18" fill="#111217"/>
+    <circle cx="373" cy="510" r="12" fill="#30333d"/>
+  </g>
+  <g transform="translate(36 34)">
+    <rect width="184" height="52" rx="26" fill="#111217"/>
+    <text x="22" y="33" fill="#fff" font-family="Manrope, Arial" font-size="16" font-weight="800">DANTE STYLIST</text>
+  </g>
+</svg>
